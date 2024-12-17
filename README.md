@@ -1,26 +1,26 @@
-# Gesture-Control-with-TensorFlow-and-OpenCV
-## Overview
-This project leverages TensorFlow, OpenCV, and MediaPipe to detect hand gestures in real-time and trigger specific actions. It's a fun and interactive application of computer vision and deep learning.
+# Gesture Control Project 🎯
 
----
+This project uses **Computer Vision** and **PyTorch** to control system functionalities like adjusting volume or launching applications via hand gestures.
 
 ## Features
-- Real-time hand gesture recognition using webcam.
-- Customizable actions for recognized gestures.
-- Extendable to train and add new gestures.
-
----
+- Real-time gesture recognition using a webcam.
+- Control volume (up/down) and launch applications like Chrome or Calculator.
+- Pre-trained PyTorch model for gesture classification.
 
 ## How It Works
-1. Mediapipe detects hand landmarks.
-2. TensorFlow predicts the gesture based on the landmarks.
-3. OpenCV displays the recognized gesture in real-time.
-4. Python libraries like `pyautogui` trigger actions (e.g., controlling volume).
+1. **Data Collection**:
+   - Collect hand landmarks using `mediapipe`.
+   - Save landmarks to a CSV file for training.
 
----
+2. **Model Training**:
+   - Train a neural network with PyTorch for gesture classification.
+   - Save the trained model as `gesture_model.pth`.
 
-## Setup
+3. **Real-Time Control**:
+   - Use the trained model for live gesture prediction.
+   - Trigger actions based on recognized gestures.
 
-### 1. Install Dependencies
-```bash
-pip install tensorflow opencv-python mediapipe pyautogui
+## Setup Instructions
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/AnmolMore28/Gesture-Control-Project-using-pytorch.git
